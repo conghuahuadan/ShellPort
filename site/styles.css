@@ -81,7 +81,7 @@ figcaption span:first-child { color: #d1ded7; }
 .light-intro > p { color: var(--muted); font-size: 14px; }
 .download-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
 .download-card { border: 1px solid var(--line); border-radius: 8px; padding: 30px; background: var(--panel); }
-.download-card-heading { display: flex; align-items: center; justify-content: space-between; }
+.download-card-heading { display: flex; align-items: center; justify-content: space-between; min-height: 42px; }
 .os-symbol { font-size: 36px; line-height: 1; color: var(--mint); }
 .windows-symbol { font-size: 42px; }
 .small-label { font-size: 10px; color: var(--muted); }
@@ -93,6 +93,9 @@ figcaption span:first-child { color: #d1ded7; }
 .download-card dd { margin: 0; color: var(--mint); font-family: Consolas, monospace; }
 .download-card .button { width: 100%; }
 .download-card .download-hint { font-size: 12px; margin-top: 16px; }
+@supports (grid-template-rows: subgrid) {
+  .download-card { display: grid; grid-template-rows: subgrid; grid-row: span 6; row-gap: 0; align-items: start; }
+}
 .install-note { color: var(--muted); font-size: 12px; padding: 20px 0; line-height: 1.9; }
 .install-note strong { font-weight: 500; color: #d4e1da; margin-right: 10px; }
 .install-note a, .faq-list a { color: var(--mint); text-decoration: underline; text-underline-offset: 3px; }
@@ -174,7 +177,7 @@ details[open] summary::after { content: "−"; }
   .light-intro > p { margin-top: 14px; }
   .light-intro > p br { display: none; }
   .download-grid { grid-template-columns: 1fr; gap: 16px; }
-  .download-card { padding: 24px; }
+  .download-card { padding: 24px; display: block; grid-row: auto; }
   .quick-start ol { grid-template-columns: 1fr; gap: 24px; }
   .faq { grid-template-columns: 1fr; gap: 30px; padding-bottom: 56px; }
   .faq h2 { font-size: 30px; }
