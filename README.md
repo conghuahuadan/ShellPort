@@ -4,6 +4,8 @@
 
 # ShellPort
 
+**简体中文** · [English](README.en.md)
+
 ### 连接服务器，也连接你的工作流。
 
 适用于 **macOS 和 Windows** 的 SSH 桌面客户端。<br>

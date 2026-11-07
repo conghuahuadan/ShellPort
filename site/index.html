@@ -14,13 +14,19 @@
   <title>ShellPort · 连接服务器，也连接你的工作流</title>
   <link rel="icon" type="image/png" href="assets/appicon.png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="alternate" hreflang="zh-CN" href="https://conghuahuadan.github.io/ShellPort/">
+  <link rel="alternate" hreflang="en" href="https://conghuahuadan.github.io/ShellPort/en.html">
+  <script src="effects.js" defer></script>
 </head>
 <body>
+  <div class="ambient" aria-hidden="true"><span class="aurora aurora-one"></span><span class="aurora aurora-two"></span><div class="ambient-grid"></div><canvas id="signal-field"></canvas></div>
+  <div class="reading-progress" aria-hidden="true"></div>
   <a class="skip-link" href="#main">跳转到正文</a>
   <header class="header wrap">
     <a class="brand" href="#" aria-label="ShellPort 首页"><img src="assets/appicon.png" width="40" height="40" alt=""><span>ShellPort</span></a>
     <nav aria-label="主导航">
       <a href="#features">功能</a><a href="#workspace">工作空间</a><a href="#faq">常见问题</a><a class="nav-download" href="#download">下载 <span aria-hidden="true">↗</span></a>
+      <div class="locale-switch" role="group" aria-label="页面语言"><a href="index.html" lang="zh-CN" hreflang="zh-CN" aria-current="page">中文</a><a href="en.html" lang="en" hreflang="en">EN</a></div>
     </nav>
   </header>
   <main id="main">
@@ -35,6 +41,7 @@
         <a class="button secondary" href="https://github.com/conghuahuadan/ShellPort/releases">查看版本更新 <span aria-hidden="true">→</span></a>
         <p class="platforms">macOS &amp; Windows <span>Apple Silicon · Intel · ARM64</span></p>
       </div>
+      <div class="connection-line" aria-hidden="true"><span class="prompt-mark">~</span><code id="connection-command">ssh your-next-server</code><span class="typing-cursor">▍</span><span class="connection-label"><i></i> CONNECT. WORK. FLOW.</span></div>
       <figure class="hero-figure">
         <div class="frame-top"><span><i></i><i></i><i></i></span><span>ShellPort / 工作空间</span><span class="frame-tag">SSH · SFTP · MONITOR</span></div>
         <a href="assets/workspace.webp" aria-label="查看终端工作区完整截图"><img src="assets/workspace.webp" width="1560" height="980" alt="ShellPort 深色工作区，文件树、SSH 终端与系统资源监控同屏显示" fetchpriority="high"></a>
