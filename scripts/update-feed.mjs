@@ -1,5 +1,5 @@
 // This standalone file is also deployed to the public distribution repository.
-import { mkdir, writeFile } from 'node:fs/promises';
+import { cp, mkdir, writeFile } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -119,8 +119,8 @@ export async function main() {
   const feed = await generateFeed({ api, download });
   const output = resolve('outputs/update-site');
   await mkdir(output, { recursive: true });
+  await cp(fileURLToPath(new URL('../site/', import.meta.url)), output, { recursive: true });
   await writeFile(join(output, 'update.json'), JSON.stringify(feed) + '\n');
-  await writeFile(join(output, 'index.html'), '<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>ShellPort</title><h1>ShellPort</h1><p>适用于 macOS 和 Windows 的 SSH 桌面客户端。</p><a href="https://github.com/conghuahuadan/ShellPort/releases/latest">下载最新版本</a></html>\n');
   await writeFile(join(output, '.nojekyll'), '');
   console.log(`已验证更新清单：${feed.release?.tag_name || '暂无公开正式版本'}`);
 }
