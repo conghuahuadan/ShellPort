@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0b1112">
-  <meta name="description" content="ShellPort 是适用于 macOS 和 Windows 的 SSH 桌面客户端，将终端、SFTP 文件管理与系统监控放进同一个工作空间。">
+  <meta name="description" content="ShellPort 是适用于 macOS 和 Windows 的桌面工作区，集成 SSH 与本机终端、SFTP 文件管理、文本编辑、系统监控及 WebDAV 加密配置同步。">
   <meta property="og:type" content="website">
   <meta property="og:title" content="ShellPort · 连接服务器，也连接你的工作流">
-  <meta property="og:description" content="终端、文件、系统监控，一个顺手的 SSH 工作空间。支持 macOS 与 Windows。">
+  <meta property="og:description" content="SSH 与本机终端、文件编辑、系统监控和配置备份，一个工作空间。支持 macOS 与 Windows。">
   <meta property="og:image" content="https://conghuahuadan.github.io/ShellPort/assets/workspace.webp">
   <meta property="og:url" content="https://conghuahuadan.github.io/ShellPort/">
   <title>ShellPort · 连接服务器，也连接你的工作流</title>
@@ -34,7 +34,7 @@
       <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> YOUR NEXT SSH WORKSPACE</p>
       <div class="hero-heading">
         <h1 id="hero-title">连接服务器，<br><span>也连接你的工作流。</span></h1>
-        <div class="hero-aside"><p>终端、文件、系统监控。<br>把远程工作的常用工具，<br>放进一个顺手的工作空间。</p><a class="text-link" href="#workspace">认识 ShellPort <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-aside"><p>终端、文件、系统监控。<br>把远程与本机的常用工具，<br>放进一个顺手的工作空间。</p><a class="text-link" href="#workspace">认识 ShellPort <span aria-hidden="true">↓</span></a></div>
       </div>
       <div class="hero-actions">
         <a class="button primary" href="https://github.com/conghuahuadan/ShellPort/releases/latest">下载 ShellPort <span aria-hidden="true">↗</span></a>
@@ -51,12 +51,12 @@
     <section id="features" class="features wrap section" aria-labelledby="features-title">
       <div class="section-heading"><p class="eyebrow">01 / 日常所需，放在一起</p><h2 id="features-title">从连接到处理，<br>一处完成。</h2><p>查看日志、调整配置、传输文件、观察资源。<br>让这些连贯的操作，留在同一个工作空间。</p></div>
       <div class="feature-grid">
-        <article><span class="feature-number">01 / CONNECT</span><h3>主机井井有条</h3><p>按生产、开发或个人用途分组，搜索主机名称、地址或用户名。支持密码与私钥认证，找到主机即可连接。</p><span class="feature-foot">分组管理 / 快速搜索 / SSH 连接</span></article>
-        <article><span class="feature-number">02 / WORK</span><h3>终端各就其位</h3><p>用标签切换连接，用横向或纵向分屏并排操作。查找终端输出，也能随时打开本机终端。</p><span class="feature-foot">多标签 / 终端分屏 / 输出查找</span></article>
-        <article><span class="feature-number">03 / TRANSFER</span><h3>文件就在手边</h3><p>通过 SFTP 浏览目录、上传下载、收藏常用路径。需要修改配置时，直接打开远程文本文件编辑。</p><span class="feature-foot">文件树 / 传输任务 / 文本编辑</span></article>
+        <article><span class="feature-number">01 / CONNECT</span><h3>主机井井有条</h3><p>按用途分组、搜索与排序主机，连接前可进行诊断。支持密码认证，或选择、拖入、粘贴 OpenSSH/PEM 私钥，加密保存在本机。</p><span class="feature-foot">主机分组 / 私钥导入 / 连接诊断</span></article>
+        <article><span class="feature-number">02 / WORK</span><h3>终端各就其位</h3><p>拖动标签排序，横向或纵向分屏独立操作，查找当前屏幕输出。本机终端使用原生 Shell，也配有本机文件与监控侧栏。</p><span class="feature-foot">独立分屏 / 输出查找 / 本机工作区</span></article>
+        <article><span class="feature-number">03 / TRANSFER</span><h3>文件就在手边</h3><p>通过 SFTP 浏览、收藏和修改权限，拖放上传或打包上传文件夹。传输可暂停、继续和重试；本机与远程文本保存前检查冲突。</p><span class="feature-foot">拖放上传 / 传输速度 / 冲突检查</span></article>
         <article><span class="feature-number">04 / OBSERVE</span><h3>状态一眼可见</h3><p>在终端旁关注 CPU、内存、网络与磁盘，进一步查看进程、连接和文件系统。可用指标取决于目标系统及权限。</p><span class="feature-foot">资源趋势 / 进程信息 / 系统详情</span></article>
-        <article><span class="feature-number">05 / KEEP</span><h3>配置随你安排</h3><p>本地备份便于导出与导入，也能连接自己的 WebDAV 服务，同步所选配置、管理云端备份。</p><span class="feature-foot">本地备份 / WebDAV / 范围选择</span></article>
-        <article><span class="feature-number">06 / MAKE IT YOURS</span><h3>用得更合习惯</h3><p>深色与浅色主题，搭配可调整的终端字体和快捷键。应用内检查与下载更新，让工作空间持续改进。</p><span class="feature-foot">深浅外观 / 字体设置 / 应用更新</span></article>
+        <article><span class="feature-number">05 / KEEP</span><h3>配置随你安排</h3><p>按范围导出、导入配置，预检冲突并保留恢复快照。连接自己的 HTTPS WebDAV 服务，加密同步所选配置，创建和恢复云备份。</p><span class="feature-foot">恢复快照 / 加密同步 / 云备份</span></article>
+        <article><span class="feature-number">06 / MAKE IT YOURS</span><h3>用得更合习惯</h3><p>中英文与深浅主题，字体和快捷键按需调整。记忆窗口位置，可关闭到后台再从托盘恢复；应用内校验安装更新，支持诊断日志导出。</p><span class="feature-foot">外观设置 / 后台保留 / 更新安装</span></article>
       </div>
     </section>
     <section id="workspace" class="showcase section" aria-labelledby="workspace-title">
@@ -74,16 +74,18 @@
         <article class="download-card"><div class="download-card-heading"><span class="os-symbol windows-symbol" aria-hidden="true">⊞</span><span class="small-label">DESKTOP / 02</span></div><h3>Windows</h3><p>提供安装版与 ZIP 免安装版。</p><dl><div><dt>Intel / AMD x64</dt><dd>windows-amd64</dd></div><div><dt>ARM64 处理器</dt><dd>windows-arm64</dd></div></dl><a class="button secondary" href="https://github.com/conghuahuadan/ShellPort/releases/latest">下载 Windows 版本 <span aria-hidden="true">↗</span></a><p class="download-hint">选择 -setup.exe 安装，或解压 .zip 使用。<br>在系统设置的“系统信息”中确认系统类型。</p></article>
       </div>
       <p class="install-note"><strong>安装前请留意</strong>当前发布包尚未完成 macOS Developer ID 签名与 Apple 公证，Windows 包未签名，首次打开可能出现系统安全提示。签名状态、系统要求与安装说明以对应 <a href="https://github.com/conghuahuadan/ShellPort/releases/latest">Release</a> 为准；附件中的 <code>SHA256SUMS.txt</code> 提供安装包校验值。</p>
-      <div class="quick-start"><p class="eyebrow">THREE STEPS TO YOUR WORKSPACE</p><ol><li><span>01</span><div><h3>添加主机</h3><p>填写地址、端口、用户名与认证信息。</p></div></li><li><span>02</span><div><h3>进入工作区</h3><p>打开终端，按需展开文件与监控。</p></div></li><li><span>03</span><div><h3>整理与备份</h3><p>分组管理主机，按需备份或同步配置。</p></div></li></ol></div>
+      <div class="quick-start"><p class="eyebrow">THREE STEPS TO YOUR WORKSPACE</p><ol><li><span>01</span><div><h3>添加主机</h3><p>填写地址、端口和认证信息；首次自动记录主机密钥。</p></div></li><li><span>02</span><div><h3>进入工作区</h3><p>打开终端，按需展开文件与监控。</p></div></li><li><span>03</span><div><h3>整理与备份</h3><p>分组管理主机，按需备份或同步配置。</p></div></li></ol></div>
     </section>
     <section id="faq" class="faq wrap section" aria-labelledby="faq-title">
       <div><p class="eyebrow">还有一些，你可能想知道的</p><h2 id="faq-title">常见问题。</h2><p class="faq-aside">遇到问题，或有新的想法？<br><a class="text-link" href="https://github.com/conghuahuadan/ShellPort/issues">在 GitHub 反馈 <span aria-hidden="true">↗</span></a></p></div>
       <div class="faq-list">
-        <details><summary>必须配置云同步才能使用吗？</summary><p>不需要。你可以直接添加主机和使用终端。WebDAV 同步为可选功能，需要时再连接自己的服务并选择同步范围。</p></details>
-        <details><summary>本机终端也可以使用吗？</summary><p>可以。从主机页选择“本机终端”即可打开，无需创建 SSH 主机。远程服务器仍通过 SSH 连接。</p></details>
-        <details><summary>私钥会随配置一起同步或备份吗？</summary><p>不会。本机保存的 SSH 私钥不包含在本地导出或云同步中，换设备后需要重新提供。登录密码是否纳入备份或同步取决于你选择的范围；备份包含主机地址等配置信息，请妥善保管。</p></details>
+        <details><summary>必须配置云同步才能使用吗？</summary><p>不需要，也无需注册 ShellPort 账号。WebDAV 默认关闭，仅连接你选择的 HTTPS 服务。确认范围与首次策略后，授权有效且无冲突时可在启动和正常退出时同步，使用中可手动同步；冲突需要确认。当前未开放内置云服务或会员服务。</p></details>
+        <details><summary>本机终端也可以使用吗？</summary><p>可以。从主机页打开原生本机终端，无需创建 SSH 主机；文件树、文本编辑和系统监控读取本机数据。本机文件及标签内收藏不进入配置备份或同步。</p></details>
+        <details><summary>私钥会随配置一起同步或备份吗？</summary><p>不会。私钥加密保存在本机，不进入导出或云同步；私钥口令仅用于当次操作。登录密码默认不纳入备份或同步，需显式勾选。WebDAV 文档整体加密；本地 JSON 的地址等配置为明文，密码字段使用内置便携密钥加密，不等同于主密码保护，请妥善保管。</p></details>
         <details><summary>在哪里查看历史版本与更新内容？</summary><p>历史版本、更新内容和对应安装包可在 <a href="https://github.com/conghuahuadan/ShellPort/releases">Releases</a> 查看。遇到问题或有新的建议，也欢迎通过 GitHub 反馈。</p></details>
         <details><summary>反馈问题时需要提供什么？</summary><p>请提供系统版本、处理器架构、ShellPort 版本、复现步骤、预期与实际结果。可以附上截图或脱敏日志，请勿上传密码、私钥、数据库、本机密钥文件或未经脱敏的日志。</p></details>
+        <details><summary>首次连接会确认主机指纹吗？</summary><p>当前首次 SSH 连接或连接测试会自动记录该地址与端口的主机密钥，不弹出指纹确认；后续密钥变化时阻止连接。主机指纹只保存在本机，不随配置同步。</p></details>
+        <details><summary>当前有哪些使用边界？</summary><p>公开安装包面向 macOS 与 Windows，暂无 Linux 包。文本编辑支持最多 2 MiB 的普通文本文件；监控与权限操作取决于系统和权限。暂不支持跳板机、SSH agent、硬件密钥、键盘交互式 MFA 或断线自动重连。</p></details>
       </div>
     </section>
     <section class="closing wrap"><img src="assets/appicon.png" width="72" height="72" alt="" loading="lazy"><h2>让每一次远程操作，<br>都更顺手。</h2><a class="button primary" href="https://github.com/conghuahuadan/ShellPort/releases/latest">开始使用 ShellPort <span aria-hidden="true">↗</span></a></section>
