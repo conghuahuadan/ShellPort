@@ -10,7 +10,25 @@ concurrency:
   group: shellport-update-pages
   cancel-in-progress: false
 jobs:
+  dispatch:
+    if: github.event_name == 'release'
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    permissions:
+      actions: write
+    steps:
+      - name: Dispatch deployment from the permitted branch
+        uses: actions/github-script@v8
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'update-feed.yml',
+              ref: 'master'
+            });
   prepare:
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
