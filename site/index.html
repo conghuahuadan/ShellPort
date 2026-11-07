@@ -14,9 +14,11 @@
   <title>ShellPort · 连接服务器，也连接你的工作流</title>
   <link rel="icon" type="image/png" href="assets/appicon.png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="workspace.css">
   <link rel="alternate" hreflang="zh-CN" href="https://conghuahuadan.github.io/ShellPort/">
   <link rel="alternate" hreflang="en" href="https://conghuahuadan.github.io/ShellPort/en.html">
   <script src="effects.js" defer></script>
+  <script src="workspace.js" defer></script>
 </head>
 <body>
   <div class="ambient" aria-hidden="true"><span class="aurora aurora-one"></span><span class="aurora aurora-two"></span><div class="ambient-grid"></div><canvas id="signal-field"></canvas></div>
@@ -44,8 +46,8 @@
       <div class="connection-line" aria-hidden="true"><span class="prompt-mark">~</span><code id="connection-command">ssh your-next-server</code><span class="typing-cursor">▍</span><span class="connection-label"><i></i> CONNECT. WORK. FLOW.</span></div>
       <figure class="hero-figure">
         <div class="frame-top"><span><i></i><i></i><i></i></span><span>ShellPort / 工作空间</span><span class="frame-tag">SSH · SFTP · MONITOR</span></div>
-        <a href="assets/workspace.webp" aria-label="查看终端工作区完整截图"><img src="assets/workspace.webp" width="1560" height="980" alt="ShellPort 深色工作区，文件树、SSH 终端与系统资源监控同屏显示" fetchpriority="high"></a>
-        <figcaption><span>文件在左，终端居中，状态在侧。</span><span>专注操作，也掌握全局 <span aria-hidden="true">↗</span></span></figcaption>
+        <div id="interactive-workspace" class="workspace-stage"><img src="assets/workspace.webp" width="1560" height="980" alt="ShellPort 深色工作区，文件树、SSH 终端与系统资源监控同屏显示" fetchpriority="high"></div>
+        <figcaption><span>文件在左，终端居中，状态在侧。</span><span>点击文件夹、切换标签，试试终端分屏。</span></figcaption>
       </figure>
     </section>
     <section id="features" class="features wrap section" aria-labelledby="features-title">
@@ -62,9 +64,9 @@
     <section id="workspace" class="showcase section" aria-labelledby="workspace-title">
       <div class="wrap">
         <div class="section-heading"><p class="eyebrow">02 / 给工作留出空间</p><h2 id="workspace-title">并排操作，<span>思路不断线。</span></h2><p>一边看日志，一边执行命令。<br>分屏各自操作，文件与监控持续可见。</p></div>
-        <figure class="screenshot"><a href="assets/split-terminal.webp" aria-label="查看终端分屏完整截图"><img src="assets/split-terminal.webp" width="1560" height="980" alt="两个并排的 SSH 终端，共享文件树与资源监控侧栏" loading="lazy" decoding="async"></a><figcaption><span>终端分屏</span><span>保留上下文，减少来回切换。</span></figcaption></figure>
+        <figure class="screenshot"><img src="assets/split-terminal.webp" width="1560" height="980" alt="两个并排的 SSH 终端，共享文件树与资源监控侧栏" loading="lazy" decoding="async"><figcaption><span>终端分屏</span><span>保留上下文，减少来回切换。</span></figcaption></figure>
         <div class="light-intro"><div><p class="eyebrow">换一种光线，继续专注</p><h2>深色沉静，浅色清爽。</h2></div><p>从主机管理到终端操作，<br>选择适合你工作环境的外观。</p></div>
-        <figure class="screenshot"><a href="assets/hosts-light.webp" aria-label="查看浅色主机管理完整截图"><img src="assets/hosts-light.webp" width="1560" height="980" alt="浅色主题主机管理页面，按环境分组，卡片展示系统、硬件和连接信息" loading="lazy" decoding="async"></a><figcaption><span>主机管理 · 浅色外观</span><span>每一个连接，都有自己的位置。</span></figcaption></figure>
+        <figure class="screenshot"><img src="assets/hosts-light.webp" width="1560" height="980" alt="浅色主题主机管理页面，按环境分组，卡片展示系统、硬件和连接信息" loading="lazy" decoding="async"><figcaption><span>主机管理 · 浅色外观</span><span>每一个连接，都有自己的位置。</span></figcaption></figure>
       </div>
     </section>
     <section id="download" class="download wrap section" aria-labelledby="download-title">

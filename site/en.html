@@ -14,9 +14,11 @@
   <title>ShellPort · Your servers. Your workflow. Connected.</title>
   <link rel="icon" type="image/png" href="assets/appicon.png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="workspace.css">
   <link rel="alternate" hreflang="zh-CN" href="https://conghuahuadan.github.io/ShellPort/">
   <link rel="alternate" hreflang="en" href="https://conghuahuadan.github.io/ShellPort/en.html">
   <script src="effects.js" defer></script>
+  <script src="workspace.js" defer></script>
 </head>
 <body>
   <div class="ambient" aria-hidden="true"><span class="aurora aurora-one"></span><span class="aurora aurora-two"></span><div class="ambient-grid"></div><canvas id="signal-field"></canvas></div>
@@ -44,8 +46,8 @@
       <div class="connection-line" aria-hidden="true"><span class="prompt-mark">~</span><code id="connection-command">ssh your-next-server</code><span class="typing-cursor">▍</span><span class="connection-label"><i></i> CONNECT. WORK. FLOW.</span></div>
       <figure class="hero-figure">
         <div class="frame-top"><span><i></i><i></i><i></i></span><span>ShellPort / Workspace</span><span class="frame-tag">SSH · SFTP · MONITOR</span></div>
-        <a href="assets/workspace.webp" aria-label="View the full terminal workspace screenshot"><img src="assets/workspace.webp" width="1560" height="980" alt="ShellPort dark workspace with a file tree, SSH terminal, and system monitoring side by side" fetchpriority="high"></a>
-        <figcaption><span>Files on the left. Terminal at the center. Status in view.</span><span>Stay focused. Keep the big picture. <span aria-hidden="true">↗</span></span></figcaption>
+        <div id="interactive-workspace" class="workspace-stage"><img src="assets/workspace.webp" width="1560" height="980" alt="ShellPort dark workspace with a file tree, SSH terminal, and system monitoring side by side" fetchpriority="high"></div>
+        <figcaption><span>Files on the left. Terminal at the center. Status in view.</span><span>Open folders, switch tabs, and try a split terminal.</span></figcaption>
       </figure>
     </section>
     <section id="features" class="features wrap section" aria-labelledby="features-title">
@@ -62,9 +64,9 @@
     <section id="workspace" class="showcase section" aria-labelledby="workspace-title">
       <div class="wrap">
         <div class="section-heading"><p class="eyebrow">02 / SPACE FOR YOUR WORKFLOW</p><h2 id="workspace-title">Side by side.<span> Stay in context.</span></h2><p>Read logs in one pane. Run commands in another.<br>Keep files and monitoring in view as you work.</p></div>
-        <figure class="screenshot"><a href="assets/split-terminal.webp" aria-label="View the full split terminal screenshot"><img src="assets/split-terminal.webp" width="1560" height="980" alt="Two SSH terminals sharing a file tree and resource monitoring panels" loading="lazy" decoding="async"></a><figcaption><span>Split terminals</span><span>Keep your context. Find your flow.</span></figcaption></figure>
+        <figure class="screenshot"><img src="assets/split-terminal.webp" width="1560" height="980" alt="Two SSH terminals sharing a file tree and resource monitoring panels" loading="lazy" decoding="async"><figcaption><span>Split terminals</span><span>Keep your context. Find your flow.</span></figcaption></figure>
         <div class="light-intro"><div><p class="eyebrow">A DIFFERENT LIGHT. THE SAME FOCUS.</p><h2>Calm in dark. Clear in light.</h2></div><p>From hosts to terminal sessions,<br> choose the look that fits your surroundings.</p></div>
-        <figure class="screenshot"><a href="assets/hosts-light.webp" aria-label="View the full light theme host management screenshot"><img src="assets/hosts-light.webp" width="1560" height="980" alt="Host management in the light theme, with environment groups, search, and system information cards" loading="lazy" decoding="async"></a><figcaption><span>Host management · Light theme</span><span>A place for every connection.</span></figcaption></figure>
+        <figure class="screenshot"><img src="assets/hosts-light.webp" width="1560" height="980" alt="Host management in the light theme, with environment groups, search, and system information cards" loading="lazy" decoding="async"><figcaption><span>Host management · Light theme</span><span>A place for every connection.</span></figcaption></figure>
       </div>
     </section>
     <section id="download" class="download wrap section" aria-labelledby="download-title">
