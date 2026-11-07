@@ -1,12 +1,12 @@
 # ShellPort
 
-ShellPort 是面向 macOS、Windows 和 Linux 的 SSH 桌面客户端。
+ShellPort 是适用于 macOS 和 Windows 的 SSH 桌面客户端。
 
-本仓库用于程序下载、使用说明和问题反馈，应用源码不在本仓库公开。
+在这里下载 ShellPort、查看版本更新与使用说明，也欢迎反馈问题和建议。
 
 ## 下载
 
-请到 [Releases](https://github.com/conghuahuadan/ShellPort/releases) 下载适合系统和处理器架构的版本。正式版本尚未发布时，下载列表可能为空。
+请到 [Releases](https://github.com/conghuahuadan/ShellPort/releases/latest) 下载最新版本，并根据系统和处理器架构选择对应文件。
 
 - macOS：Apple Silicon（arm64）或 Intel（amd64）。
 - Windows：x64（amd64）或 ARM64；安装版为 setup.exe，免安装版为 ZIP。
