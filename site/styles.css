@@ -58,7 +58,7 @@ h1 span, .download h2 span { color: var(--mint); }
 .frame-top i { width: 7px; height: 7px; background: #50645c; border-radius: 50%; }
 .frame-top i:last-child { background: var(--mint); }
 .frame-tag { font-family: Consolas, monospace; font-size: 10px; }
-.hero-figure img, .screenshot img { width: 100%; }
+.hero-figure img, .screenshot img { width: 100%; cursor: default; }
 figcaption { display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 12px; padding: 18px 22px; }
 .hero-figure figcaption { border-top: 1px solid var(--line); }
 figcaption span:first-child { color: #d1ded7; }
