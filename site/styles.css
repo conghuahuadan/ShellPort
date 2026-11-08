@@ -288,3 +288,10 @@ body { position: relative; isolation: isolate; }
   #signal-field { display: none; }
   .button:hover { transform: none; }
 }
+
+/* Command completion introduction shares the existing showcase layout. */
+.completion-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; margin: 64px 0; padding: 36px 0; border-top: 1px solid var(--line, #273b3a); border-bottom: 1px solid var(--line, #273b3a); }
+.completion-intro h2 { margin: 12px 0 0; font-size: clamp(28px, 3.5vw, 48px); line-height: 1.25; }
+.completion-intro p { line-height: 1.9; }
+.completion-intro kbd { padding: 2px 6px; border: 1px solid #45635f; border-radius: 4px; font: inherit; white-space: nowrap; }
+@media (max-width: 760px) { .completion-intro { grid-template-columns: 1fr; gap: 16px; margin: 40px 0; padding: 24px 0; } }

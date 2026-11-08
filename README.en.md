@@ -15,9 +15,11 @@ Bring SSH and local terminals, file editing, system monitoring, and configuratio
 
 macOS / Windows · Intel / Apple Silicon / ARM64 · Dark / Light
 
-![ShellPort workspace with a file tree, SSH terminal, and system monitoring side by side](site/assets/workspace.webp)
+![ShellPort workspace with a file tree, SSH terminal, and system monitoring side by side](site/assets/workspace-overview.webp)
 
 </div>
+
+*UI illustrations contain sample data. Features below describe the current implementation; check each release for availability.*
 
 ## From connection to action, in one place
 
@@ -25,11 +27,12 @@ Watch resource usage while reading logs. Manage remote files right beside the te
 
 | Feature | What you can do |
 | --- | --- |
-| **Host management** | Group, search, and sort hosts, diagnose connections, and reconnect manually. Use passwords or OpenSSH/PEM keys added by file selection, drag and drop, or paste. |
+| **Host management** | Group, search, and sort hosts, diagnose connections, and reconnect manually. Search recent connections or all hosts when opening a terminal. Use passwords or OpenSSH/PEM keys added by file selection, drag and drop, or paste. |
 | **Terminal workspace** | Switch and reorder tabs, work independently in horizontal or vertical splits, and search the current pane’s output. Native local shells include local file and monitoring panels. |
+| **Command completion and descriptions** | See commands from the current connection beside the cursor, with fuzzy matching and bundled Chinese/English descriptions. Select with arrow keys; Tab / Enter inserts the name, and a separate Enter executes it. |
 | **Files and transfers** | Browse SFTP directories, bookmark paths, edit permissions, drop files to upload, and upload folders as archives. Pause, resume, or retry transfers and see transfer speeds. Edit local or remote text with save conflict checks and draft export. |
 | **System monitoring** | Keep CPU, memory, network, and disk activity beside the terminal. Explore processes, connections, and file systems. Available metrics depend on the target system and permissions. |
-| **Backup and sync** | Export and import selected configuration, review conflicts, and retain recovery snapshots. Use your own HTTPS WebDAV service for encrypted configuration sync and cloud backup creation and recovery. |
+| **Backup and sync** | Export and import selected configuration, review conflicts, and retain recovery snapshots. Use your own HTTPS WebDAV service for encrypted configuration sync and cloud backup creation and recovery, with built-in WebDAV setup guides. |
 | **Appearance and updates** | Choose Chinese or English, dark or light themes, terminal fonts, and shortcuts. Remember window placement, optionally keep work running in the background with tray/menu bar access, install verified updates, and export local diagnostic logs. |
 
 ## A workspace that keeps you in context
@@ -45,6 +48,12 @@ Each split terminal works independently while the file and monitoring panels sta
 Group production, development, and personal servers. Find a host by name, address, or username, and switch to a light theme when it suits your environment.
 
 ![Host groups, search, and information cards in the ShellPort light theme](site/assets/hosts-light.webp)
+
+### A little help while typing
+
+Type a command name to see candidates beside the cursor and read bundled tldr-pages descriptions. Descriptions follow the interface language, fall back from Chinese to English, and indicate when no description is available.
+
+Select with arrow keys. **Tab / Enter inserts the command name**; release the key and press Enter again to execute. Esc dismisses the list. Candidates come from the current connection without reading shell history. Arguments, paths, and complex expressions use the shell’s own completion.
 
 ## Download
 
@@ -97,7 +106,7 @@ No ShellPort account is required. WebDAV is off by default. Connect your own HTT
 <details>
 <summary><strong>Are private keys included in backups or sync?</strong></summary>
 
-No. SSH private keys are encrypted locally and excluded from exports and cloud sync. Add them again on a new device; key passphrases are used only for the current operation. Login passwords are excluded by default and require explicit selection. WebDAV documents are encrypted as a whole. Local JSON exports leave host addresses and other configuration readable; password fields use a built-in portable encryption key, which is not master-password protection. Keep backups safe.
+No. SSH private keys are encrypted locally and excluded from exports and cloud sync. Add them again on a new device; key passphrases are used only for the current operation. Login passwords are excluded by default and require explicit selection. WebDAV documents are encrypted as a whole using a key derived from the WebDAV password; this does not guarantee that the provider cannot decrypt them. Local JSON exports leave host addresses and other configuration readable; password fields use a built-in portable encryption key, which is not master-password protection. Keep backups safe.
 
 </details>
 

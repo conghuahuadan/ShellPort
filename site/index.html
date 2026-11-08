@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0b1112">
-  <meta name="description" content="ShellPort 是适用于 macOS 和 Windows 的桌面工作区，集成 SSH 与本机终端、SFTP 文件管理、文本编辑、系统监控及 WebDAV 加密配置同步。">
+  <meta name="description" content="ShellPort 是适用于 macOS 和 Windows 的桌面工作区，集成 SSH 与本机终端、命令补全、SFTP 文件管理、文本编辑、系统监控及 WebDAV 加密配置同步。">
   <meta property="og:type" content="website">
   <meta property="og:title" content="ShellPort · 连接服务器，也连接你的工作流">
   <meta property="og:description" content="SSH 与本机终端、文件编辑、系统监控和配置备份，一个工作空间。支持 macOS 与 Windows。">
-  <meta property="og:image" content="https://conghuahuadan.github.io/ShellPort/assets/workspace.webp">
+  <meta property="og:image" content="https://conghuahuadan.github.io/ShellPort/assets/workspace-overview.webp">
   <meta property="og:url" content="https://conghuahuadan.github.io/ShellPort/">
   <title>ShellPort · 连接服务器，也连接你的工作流</title>
   <link rel="icon" type="image/png" href="assets/appicon.png">
@@ -44,18 +44,18 @@
       <div class="connection-line" aria-hidden="true"><span class="prompt-mark">~</span><code id="connection-command">ssh your-next-server</code><span class="typing-cursor">▍</span><span class="connection-label"><i></i> CONNECT. WORK. FLOW.</span></div>
       <figure class="hero-figure">
         <div class="frame-top"><span><i></i><i></i><i></i></span><span>ShellPort / 工作空间</span><span class="frame-tag">SSH · SFTP · MONITOR</span></div>
-        <img src="assets/workspace.webp" width="1560" height="980" alt="ShellPort 深色工作区，文件树、SSH 终端与系统资源监控同屏显示" fetchpriority="high">
-        <figcaption><span>文件在左，终端居中，状态在侧。</span><span>专注操作，也掌握全局 <span aria-hidden="true">↗</span></span></figcaption>
+        <img src="assets/workspace-overview.webp" width="1560" height="980" alt="ShellPort 深色工作区，文件树、SSH 终端与系统资源监控同屏显示" fetchpriority="high">
+        <figcaption><span>文件在左，终端居中，状态在侧。</span><span>界面示意 · 包含示例数据</span></figcaption>
       </figure>
     </section>
     <section id="features" class="features wrap section" aria-labelledby="features-title">
       <div class="section-heading"><p class="eyebrow">01 / 日常所需，放在一起</p><h2 id="features-title">从连接到处理，<br>一处完成。</h2><p>查看日志、调整配置、传输文件、观察资源。<br>让这些连贯的操作，留在同一个工作空间。</p></div>
       <div class="feature-grid">
-        <article><span class="feature-number">01 / CONNECT</span><h3>主机井井有条</h3><p>按用途分组、搜索与排序主机，连接前可进行诊断。支持密码认证，或选择、拖入、粘贴 OpenSSH/PEM 私钥，加密保存在本机。</p><span class="feature-foot">主机分组 / 私钥导入 / 连接诊断</span></article>
-        <article><span class="feature-number">02 / WORK</span><h3>终端各就其位</h3><p>拖动标签排序，横向或纵向分屏独立操作，查找当前屏幕输出。本机终端使用原生 Shell，也配有本机文件与监控侧栏。</p><span class="feature-foot">独立分屏 / 输出查找 / 本机工作区</span></article>
+        <article><span class="feature-number">01 / CONNECT</span><h3>主机井井有条</h3><p>按用途分组、搜索与排序主机，连接前可进行诊断；新建终端可查找最近连接或全部主机。支持密码认证，或选择、拖入、粘贴 OpenSSH/PEM 私钥，加密保存在本机。</p><span class="feature-foot">主机分组 / 私钥导入 / 连接诊断</span></article>
+        <article><span class="feature-number">02 / WORK</span><h3>终端各就其位</h3><p>拖动标签排序，横向或纵向分屏独立操作，查找当前屏幕输出。输入命令名时，在光标旁查看候选与离线说明。本机终端使用原生 Shell，也配有本机文件与监控侧栏。</p><span class="feature-foot">独立分屏 / 命令补全 / 离线说明</span></article>
         <article><span class="feature-number">03 / TRANSFER</span><h3>文件就在手边</h3><p>通过 SFTP 浏览、收藏和修改权限，拖放上传或打包上传文件夹。传输可暂停、继续和重试；本机与远程文本保存前检查冲突。</p><span class="feature-foot">拖放上传 / 传输速度 / 冲突检查</span></article>
         <article><span class="feature-number">04 / OBSERVE</span><h3>状态一眼可见</h3><p>在终端旁关注 CPU、内存、网络与磁盘，进一步查看进程、连接和文件系统。可用指标取决于目标系统及权限。</p><span class="feature-foot">资源趋势 / 进程信息 / 系统详情</span></article>
-        <article><span class="feature-number">05 / KEEP</span><h3>配置随你安排</h3><p>按范围导出、导入配置，预检冲突并保留恢复快照。连接自己的 HTTPS WebDAV 服务，加密同步所选配置，创建和恢复云备份。</p><span class="feature-foot">恢复快照 / 加密同步 / 云备份</span></article>
+        <article><span class="feature-number">05 / KEEP</span><h3>配置随你安排</h3><p>按范围导出、导入配置，预检冲突并保留恢复快照。连接自己的 HTTPS WebDAV 服务，加密同步所选配置，创建和恢复云备份，内置 WebDAV 接入教程。</p><span class="feature-foot">恢复快照 / 加密同步 / 云备份</span></article>
         <article><span class="feature-number">06 / MAKE IT YOURS</span><h3>用得更合习惯</h3><p>中英文与深浅主题，字体和快捷键按需调整。记忆窗口位置，可关闭到后台再从托盘恢复；应用内校验安装更新，支持诊断日志导出。</p><span class="feature-foot">外观设置 / 后台保留 / 更新安装</span></article>
       </div>
     </section>
@@ -63,6 +63,10 @@
       <div class="wrap">
         <div class="section-heading"><p class="eyebrow">02 / 给工作留出空间</p><h2 id="workspace-title">并排操作，<span>思路不断线。</span></h2><p>一边看日志，一边执行命令。<br>分屏各自操作，文件与监控持续可见。</p></div>
         <figure class="screenshot"><img src="assets/split-terminal.webp" width="1560" height="980" alt="两个并排的 SSH 终端，共享文件树与资源监控侧栏" loading="lazy" decoding="async"><figcaption><span>终端分屏</span><span>保留上下文，减少来回切换。</span></figcaption></figure>
+        <div class="completion-intro">
+          <div><p class="eyebrow">命令名，边输入边查找</p><h2>提示跟着光标，<br>操作留在终端。</h2></div>
+          <div><p>从当前连接读取可用命令，支持前缀、包含与模糊匹配。内置 tldr-pages 中英文离线简介，无需另开页面查阅命令用途。</p><p>方向键选择，<kbd>Tab</kbd> / <kbd>Enter</kbd> 填入，松开后再次按 <kbd>Enter</kbd> 执行，<kbd>Esc</kbd> 收起。参数与路径继续使用 Shell 自身补全，不读取 Shell 历史。</p></div>
+        </div>
         <div class="light-intro"><div><p class="eyebrow">换一种光线，继续专注</p><h2>深色沉静，浅色清爽。</h2></div><p>从主机管理到终端操作，<br>选择适合你工作环境的外观。</p></div>
         <figure class="screenshot"><img src="assets/hosts-light.webp" width="1560" height="980" alt="浅色主题主机管理页面，按环境分组，卡片展示系统、硬件和连接信息" loading="lazy" decoding="async"><figcaption><span>主机管理 · 浅色外观</span><span>每一个连接，都有自己的位置。</span></figcaption></figure>
       </div>
@@ -81,10 +85,11 @@
       <div class="faq-list">
         <details><summary>必须配置云同步才能使用吗？</summary><p>不需要，也无需注册 ShellPort 账号。WebDAV 默认关闭，仅连接你选择的 HTTPS 服务。确认范围与首次策略后，授权有效且无冲突时可在启动和正常退出时同步，使用中可手动同步；冲突需要确认。当前未开放内置云服务或会员服务。</p></details>
         <details><summary>本机终端也可以使用吗？</summary><p>可以。从主机页打开原生本机终端，无需创建 SSH 主机；文件树、文本编辑和系统监控读取本机数据。本机文件及标签内收藏不进入配置备份或同步。</p></details>
-        <details><summary>私钥会随配置一起同步或备份吗？</summary><p>不会。私钥加密保存在本机，不进入导出或云同步；私钥口令仅用于当次操作。登录密码默认不纳入备份或同步，需显式勾选。WebDAV 文档整体加密；本地 JSON 的地址等配置为明文，密码字段使用内置便携密钥加密，不等同于主密码保护，请妥善保管。</p></details>
+        <details><summary>私钥会随配置一起同步或备份吗？</summary><p>不会。私钥加密保存在本机，不进入导出或云同步；私钥口令仅用于当次操作。登录密码默认不纳入备份或同步，需显式勾选。WebDAV 文档整体加密，密钥由 WebDAV 密码派生，不宣称服务商不可解密；本地 JSON 的地址等配置为明文，密码字段使用内置便携密钥加密，不等同于主密码保护，请妥善保管。</p></details>
         <details><summary>在哪里查看历史版本与更新内容？</summary><p>历史版本、更新内容和对应安装包可在 <a href="https://github.com/conghuahuadan/ShellPort/releases">Releases</a> 查看。遇到问题或有新的建议，也欢迎通过 GitHub 反馈。</p></details>
         <details><summary>反馈问题时需要提供什么？</summary><p>请提供系统版本、处理器架构、ShellPort 版本、复现步骤、预期与实际结果。可以附上截图或脱敏日志，请勿上传密码、私钥、数据库、本机密钥文件或未经脱敏的日志。</p></details>
         <details><summary>首次连接会确认主机指纹吗？</summary><p>当前首次 SSH 连接或连接测试会自动记录该地址与端口的主机密钥，不弹出指纹确认；后续密钥变化时阻止连接。主机指纹只保存在本机，不随配置同步。</p></details>
+        <details><summary>命令补全会自动执行吗？</summary><p>不会。候选只在已识别的命令输入位置显示，确认时只填入命令名，需要再次按 Enter 才执行。它不提供 AI 命令生成，也不保证覆盖当前 Shell 临时定义的别名、函数或临时修改的 PATH。未收录的命令可能没有离线说明。</p></details>
         <details><summary>当前有哪些使用边界？</summary><p>公开安装包面向 macOS 与 Windows，暂无 Linux 包。文本编辑支持最多 2 MiB 的普通文本文件；监控与权限操作取决于系统和权限。暂不支持跳板机、SSH agent、硬件密钥、键盘交互式 MFA 或断线自动重连。</p></details>
       </div>
     </section>

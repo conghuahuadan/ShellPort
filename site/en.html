@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0b1112">
-  <meta name="description" content="ShellPort brings SSH and native local terminals, SFTP files, text editing, system monitoring, and encrypted WebDAV configuration sync into one workspace for macOS and Windows.">
+  <meta name="description" content="ShellPort brings SSH and native local terminals, command completion, SFTP files, text editing, system monitoring, and encrypted WebDAV configuration sync into one workspace for macOS and Windows.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="ShellPort · Your servers. Your workflow. Connected.">
   <meta property="og:description" content="SSH and local terminals, file editing, system monitoring, and configuration backups. One workspace for macOS and Windows.">
-  <meta property="og:image" content="https://conghuahuadan.github.io/ShellPort/assets/workspace.webp">
+  <meta property="og:image" content="https://conghuahuadan.github.io/ShellPort/assets/workspace-overview.webp">
   <meta property="og:url" content="https://conghuahuadan.github.io/ShellPort/en.html">
   <title>ShellPort · Your servers. Your workflow. Connected.</title>
   <link rel="icon" type="image/png" href="assets/appicon.png">
@@ -44,18 +44,18 @@
       <div class="connection-line" aria-hidden="true"><span class="prompt-mark">~</span><code id="connection-command">ssh your-next-server</code><span class="typing-cursor">▍</span><span class="connection-label"><i></i> CONNECT. WORK. FLOW.</span></div>
       <figure class="hero-figure">
         <div class="frame-top"><span><i></i><i></i><i></i></span><span>ShellPort / Workspace</span><span class="frame-tag">SSH · SFTP · MONITOR</span></div>
-        <img src="assets/workspace.webp" width="1560" height="980" alt="ShellPort dark workspace with a file tree, SSH terminal, and system monitoring side by side" fetchpriority="high">
-        <figcaption><span>Files on the left. Terminal at the center. Status in view.</span><span>Stay focused. Keep the big picture. <span aria-hidden="true">↗</span></span></figcaption>
+        <img src="assets/workspace-overview.webp" width="1560" height="980" alt="ShellPort dark workspace with a file tree, SSH terminal, and system monitoring side by side" fetchpriority="high">
+        <figcaption><span>Files on the left. Terminal at the center. Status in view.</span><span>UI illustration · Sample data</span></figcaption>
       </figure>
     </section>
     <section id="features" class="features wrap section" aria-labelledby="features-title">
       <div class="section-heading"><p class="eyebrow">01 / YOUR EVERYDAY TOOLS, TOGETHER</p><h2 id="features-title">From connection to action.<br>All in one place.</h2><p>Read logs, edit configuration, move files, and watch resources.<br>Keep a connected workflow inside one workspace.</p></div>
       <div class="feature-grid">
-        <article><span class="feature-number">01 / CONNECT</span><h3>A place for every host</h3><p>Group, search, sort, and diagnose hosts. Connect with a password or an OpenSSH/PEM key added by file selection, drag and drop, or paste. Keys are encrypted locally.</p><span class="feature-foot">Host groups / Key import / Diagnostics</span></article>
-        <article><span class="feature-number">02 / WORK</span><h3>Room to work in parallel</h3><p>Reorder tabs, work independently in horizontal or vertical splits, and search the current pane’s output. Native local shells include local file and monitoring panels.</p><span class="feature-foot">Split terminals / Output search / Local workspace</span></article>
+        <article><span class="feature-number">01 / CONNECT</span><h3>A place for every host</h3><p>Group, search, sort, and diagnose hosts. Open terminals from recent connections or all hosts. Connect with a password or an OpenSSH/PEM key added by file selection, drag and drop, or paste. Keys are encrypted locally.</p><span class="feature-foot">Host groups / Key import / Diagnostics</span></article>
+        <article><span class="feature-number">02 / WORK</span><h3>Room to work in parallel</h3><p>Reorder tabs, work independently in horizontal or vertical splits, and search the current pane’s output. Find command candidates and offline descriptions beside the cursor. Native local shells include local file and monitoring panels.</p><span class="feature-foot">Independent splits / Command completion / Offline descriptions</span></article>
         <article><span class="feature-number">03 / TRANSFER</span><h3>Files within reach</h3><p>Browse SFTP files, bookmark paths, and edit permissions. Drop files or upload folders as archives. Pause, resume, and retry transfers. Edit local or remote text with save conflict checks.</p><span class="feature-foot">Drop to upload / Transfer speeds / Conflict checks</span></article>
         <article><span class="feature-number">04 / OBSERVE</span><h3>Know what is happening</h3><p>Keep an eye on CPU, memory, network, and disks. Explore processes, connections, and file systems. Metrics depend on the target system and permissions.</p><span class="feature-foot">Resource trends / Processes / System details</span></article>
-        <article><span class="feature-number">05 / KEEP</span><h3>Your configuration, your way</h3><p>Export selected configuration, review import conflicts, and retain recovery snapshots. Connect your own HTTPS WebDAV service for encrypted sync and cloud backup creation and recovery.</p><span class="feature-foot">Recovery snapshots / Encrypted sync / Cloud backups</span></article>
+        <article><span class="feature-number">05 / KEEP</span><h3>Your configuration, your way</h3><p>Export selected configuration, review import conflicts, and retain recovery snapshots. Connect your own HTTPS WebDAV service for encrypted sync and cloud backup creation and recovery, with built-in WebDAV setup guides.</p><span class="feature-foot">Recovery snapshots / Encrypted sync / Cloud backups</span></article>
         <article><span class="feature-number">06 / MAKE IT YOURS</span><h3>Make yourself at home</h3><p>Choose Chinese or English, themes, fonts, and shortcuts. Remember window placement or keep work in the background with tray access. Install verified updates and export diagnostic logs.</p><span class="feature-foot">Appearance / Background mode / Update installation</span></article>
       </div>
     </section>
@@ -63,6 +63,10 @@
       <div class="wrap">
         <div class="section-heading"><p class="eyebrow">02 / SPACE FOR YOUR WORKFLOW</p><h2 id="workspace-title">Side by side.<span> Stay in context.</span></h2><p>Read logs in one pane. Run commands in another.<br>Keep files and monitoring in view as you work.</p></div>
         <figure class="screenshot"><img src="assets/split-terminal.webp" width="1560" height="980" alt="Two SSH terminals sharing a file tree and resource monitoring panels" loading="lazy" decoding="async"><figcaption><span>Split terminals</span><span>Keep your context. Find your flow.</span></figcaption></figure>
+        <div class="completion-intro">
+          <div><p class="eyebrow">FIND COMMANDS AS YOU TYPE</p><h2>Hints at the cursor.<br>Keep working in your shell.</h2></div>
+          <div><p>Find commands from the current connection with prefix, substring, and fuzzy matching. Read bundled Chinese and English tldr-pages descriptions offline.</p><p>Select with arrow keys. <kbd>Tab</kbd> / <kbd>Enter</kbd> inserts the name; release the key and press <kbd>Enter</kbd> again to execute. <kbd>Esc</kbd> dismisses. Arguments and paths use shell completion. Shell history is never read.</p></div>
+        </div>
         <div class="light-intro"><div><p class="eyebrow">A DIFFERENT LIGHT. THE SAME FOCUS.</p><h2>Calm in dark. Clear in light.</h2></div><p>From hosts to terminal sessions,<br> choose the look that fits your surroundings.</p></div>
         <figure class="screenshot"><img src="assets/hosts-light.webp" width="1560" height="980" alt="Host management in the light theme, with environment groups, search, and system information cards" loading="lazy" decoding="async"><figcaption><span>Host management · Light theme</span><span>A place for every connection.</span></figcaption></figure>
       </div>
@@ -81,10 +85,11 @@
       <div class="faq-list">
         <details><summary>Do I need cloud sync to use ShellPort?</summary><p>No ShellPort account is required. WebDAV is off by default and uses your chosen HTTPS service. Confirm the scope and initial strategy to enable startup and normal-exit sync when authorization is valid and no conflicts occur. Manual sync is available; conflicts require confirmation. Built-in cloud and membership services are not currently available.</p></details>
         <details><summary>Can I use a local terminal too?</summary><p>Yes. Open a native local terminal from the hosts page without creating an SSH host. File browsing, text editing, and monitoring use local data. Local files and per-tab local bookmarks are excluded from configuration backups and sync.</p></details>
-        <details><summary>Are private keys included in sync or backups?</summary><p>No. Private keys are encrypted locally and excluded from exports and sync; passphrases are used only for the current operation. Login passwords are excluded by default and require explicit selection. WebDAV documents are encrypted as a whole. Local JSON leaves host addresses and other configuration readable; password fields use a built-in portable key, which is not master-password protection. Keep backups safe.</p></details>
+        <details><summary>Are private keys included in sync or backups?</summary><p>No. Private keys are encrypted locally and excluded from exports and sync; passphrases are used only for the current operation. Login passwords are excluded by default and require explicit selection. WebDAV documents are encrypted as a whole using a key derived from the WebDAV password; this does not guarantee that the provider cannot decrypt them. Local JSON leaves host addresses and other configuration readable; password fields use a built-in portable key, which is not master-password protection. Keep backups safe.</p></details>
         <details><summary>Where can I find older versions and release notes?</summary><p>Find past versions, release notes, and packages in <a href="https://github.com/conghuahuadan/ShellPort/releases">Releases</a>. You can also share issues and ideas on GitHub.</p></details>
         <details><summary>What should I include in an issue report?</summary><p>Include your operating system, processor architecture, ShellPort version, reproduction steps, and expected and actual results. Screenshots or sanitized logs help. Do not upload passwords, private keys, databases, local encryption key files, or unsanitized logs.</p></details>
         <details><summary>Does the first connection ask me to confirm a fingerprint?</summary><p>The first SSH connection or connection test automatically records the host key for that address and port, without a confirmation dialog. Later key changes block the connection. Host fingerprints stay on the device and are excluded from configuration sync.</p></details>
+        <details><summary>Does command completion execute commands?</summary><p>No. It appears at recognized command input positions and only inserts a command name. Press Enter again to execute. It does not generate AI commands or guarantee coverage of temporary aliases, functions, or PATH changes in the active shell. Some commands may have no bundled description.</p></details>
         <details><summary>What are the current limits?</summary><p>Public packages target macOS and Windows; no Linux package is currently provided. Text editing supports regular text files up to 2 MiB. Monitoring and permission operations depend on the system and access rights. Jump hosts, SSH agents, hardware keys, keyboard-interactive MFA, and automatic reconnection are not currently supported.</p></details>
       </div>
     </section>
